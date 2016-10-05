@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <title>Minimum Bootstrap HTML Skeleton</title>
+
+    <!--  -->
+
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    
+    <div class="container">
+        <div id="showdiv"></div>
+    </div>
+    <br/>
+
+    <script>
+        init();
+
+        function init() {
+
+            getRndm();                               //calls the function
+
+        }
+
+        function getRndm() {                        // finds random number 1-10
+
+            console.log(Math.ceil(Math.random() * 10));
+
+            lowHighReturn(100,22,1000);             //calls the function 
+        }
+        
+        function lowHighReturn(a,b,c){              //gives lowest and highest value in arg
+            
+                        console.log(Math.min(a,b,c));
+                        console.log(Math.max(a,b,c));
+            
+            roundToInteger(3.323232);               //calls the function
+        }
+
+        function roundToInteger(num1) {             //rounds number using proper math
+            console.log(Math.round(num1));
+            
+            roundDown(10.99);                       //calls the function
+        }
+
+        function roundDown(num2) {                  // rounds DOWN no matter what the value
+            console.log(Math.floor(num2));
+            
+            addThree(3, 4, 6);                      //calls the function
+        }
+
+        function addThree(num1, num2, num3) {       //adds three numbers
+            console.log(num1 + num2 + num3);
+            
+            addTwoDivide(7, 21);                    // calls the function
+        }
+
+        function addTwoDivide(a, b) {               //adds 2 numbers and divides by 7
+            console.log(a + b) / 7;
+            
+            stringToNum('5');                       // calls the function
+        }
+
+        function stringToNum(n) {                   //converts string to number
+            console.log(parseInt(n));
+            
+            stringToFloat('4.2323');                //calls the function
+        }
+
+        function stringToFloat(x) {                 //converts string to a float
+            console.log(parseFloat(x));
+            
+            incrementByOne(22);                     //calls the function
+        }
+
+        function incrementByOne(z) {                //increments by one
+            var n = 22;
+            n++;
+            var z = n
+            console.log(z);
+        }
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
